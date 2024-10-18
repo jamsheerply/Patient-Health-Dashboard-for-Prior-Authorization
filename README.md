@@ -1,97 +1,66 @@
-# ClearPath Prior Authorization: Patient Health Dashboard for Prior Authorization
+# ClearPath Prior Authorization: Patient Health Dashboard
 
-## Objective
+A full-stack application for healthcare providers to manage patient health data and streamline prior authorization workflows.
 
-Develop a full-stack application where healthcare providers can view and manage patient health data, focusing on prior authorization workflows. This will involve creating a patient dashboard, integrating health data, and building APIs for submitting and managing prior authorization requests.
+## 🚀 Features
 
-## Technologies Used
+- Patient dashboard for health data visualization
+- Prior authorization request submission and management
+- Integration with health data APIs
+- Secure authentication and data handling
 
-- **Frontend**: React, Axios, Tailwind CSS, React Icons, Shadcn UI
-- **Backend**: Node.js, Express, MongoDB, Mongoose
-- **Development Tools**: Nodemon, dotenv, Nodemailer
+## 🛠 Tech Stack
 
-## Api Documentation
+- **Frontend:** React, Axios, Tailwind CSS, React Icons, Shadcn UI
+- **Backend:** Node.js, Express, MongoDB, Mongoose
+- **Tools:** Nodemon, dotenv, Nodemailer
 
-Api-docs: https://documenter.getpostman.com/view/29406159/2sAXxWYopK
-Back end: https://patient-production.up.railway.app/
-front end: https://patient-health-dashboard-for-prior-authorization-six.vercel.app/
+## 🔗 Important Links (All Live and Functional)
 
-## Installation
+- [API Documentation](https://documenter.getpostman.com/view/29406159/2sAXxWYopK) - Live Postman Documentation
+- [Backend Deployment](https://patient-production.up.railway.app/) - Live Backend Server
+- [Frontend Deployment](https://patient-health-dashboard-for-prior-authorization-six.vercel.app/) - Live Frontend Application
 
-### Setup Instructions
+## 🚀 Quick Start
 
-1. **Clone the repository:**
+1. Clone the repo
+2. Install dependencies for frontend (`cd client && npm install`) and backend (`cd /server && npm install`)
+3. Set up environment variables (see below)
+4. Run backend and frontend simultaneously:
+   - In one terminal:
+     ```bash
+     cd /server && npm run dev
+     ```
+   - In another terminal:
+     ```bash
+     cd /client && npm run dev
+     ```
 
-   ```bash
-   git clone https://github.com/jamsheerply/Patient-Health-Dashboard-for-Prior-Authorization
+## 🔐 Environment Variables
 
-   Navigate to the project directory:
-   ```
+### Server (.env file in /server folder)
 
-bash
-Copy code
-cd Patient-Health-Dashboard-for-Prior-Authorization
-Install dependencies for both frontend and backend:
-
-For the frontend:
-bash
-Copy code
-cd client
-npm install
-For the backend:
-bash
-Copy code
-cd ../server
-npm install
-
-## Create a .env file in the server folder for environment variables:
-
-# Server configuration
-
+```
 PORT=5000
-
-# CORS frontend URL (change to your frontend app's URL)
-
 FRONTEND_URL=http://localhost:5173
-
-# Environment
-
 NODE_ENV=development
+MONGODB_URI="your_mongodb_uri"
+TOKEN_SECRET="your_token_secret"
+EMAIL="your_email@example.com"
+PASS="your_email_app_password"
+```
 
-# Database connection string (replace with your actual MongoDB connection URI)
+### Client (.env file in /client folder)
 
-MONGODB_URI="your monguri"
+```
+VITE_API_URL=http://localhost:5000
+```
 
-# Token secret
+Make sure to replace placeholder values with your actual configuration.
 
-TOKEN_SECRET="taskMangementAplicationToken"
+## 🔑 Demo Access
 
-# Nodemailer setup
+- Email: user4@gmail.com
+- Password: Admin@123
 
-EMAIL="your email "
-PASS="Your app passwords"
-
-## Create a .env file in the client folder for environment variables
-
-VITE_API_URL= http://localhost:5000
-
-Run the backend:
-
-bash
-Copy code
-cd /server
-npm run dev
-Run the frontend:
-
-bash
-Copy code
-cd /client
-npm run dev
-Visit the application locally: Open your browser and go to http://localhost:5173.
-
-## Demo creditional
-
-email : user4@gmail.com
-password : Admin@123
-
-## Demo Video
+For detailed setup instructions, contribution guidelines, and more, please check our [README.md](link-to-your-readme-file).
