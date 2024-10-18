@@ -47,7 +47,8 @@ const userSlice = createSlice({
       .addCase(verifyOtp.fulfilled, (state, { payload }) => {
         state.loading = false;
         console.log(payload);
-        state.user = payload.user;
+        // console.log("payload", payload);
+        state.user = payload.data;
         toast.success("Registration successful");
         state.error = false;
       })
