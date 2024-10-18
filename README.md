@@ -1,78 +1,22 @@
 # ClearPath Prior Authorization: Patient Health Dashboard
 
-A full-stack application for healthcare providers to manage patient health data and streamline prior authorization workflows.
-
-## 📌 Overview
-
-Streamline your healthcare workflow with our comprehensive patient health dashboard, designed specifically for managing prior authorizations efficiently and securely.
-
-## 🚀 Features
-
-- **Patient Dashboard**
-
-  - Comprehensive health data visualization
-  - Interactive charts and metrics
-  - Real-time status updates
-
-- **Prior Authorization Management**
-
-  - Streamlined request submission
-  - Automated workflow tracking
-  - Status notifications
-
-- **Security & Integration**
-  - Secure authentication system
-  - HIPAA-compliant data handling
-  - Seamless health data API integration
-
-## 🛠 Tech Stack
-
-### Frontend
-
-- React
-- Axios
-- Tailwind CSS
-- React Icons
-- Shadcn UI
-
-### Backend
-
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-
-### Development Tools
-
-- Nodemon
-- dotenv
-- Nodemailer
-
-## 🔗 Important Links
-
-### Live Deployments
-
-- **API Documentation**: [Postman Documentation](https://documenter.getpostman.com/view/29406159/2sAXxWYopK)
-- **Backend Server**: [Railway Deployment](https://patient-production.up.railway.app/)
-- **Frontend Application**: [Vercel Deployment](https://patient-health-dashboard-for-prior-authorization-six.vercel.app/)
-
-### Demo Access
-
-Email:`user4@gmail.com`
-
-Password: `Admin@123`
-
-## 🎥 Demo Video
-
-[![Project Demo](https://youtu.be/lsDrw22NcGc?si=f1HYs0v5bO0TkpPa)](https://youtu.be/lsDrw22NcGc?si=f1HYs0v5bO0TkpPa)
+[Previous sections remain the same until Quick Start Guide]
 
 ## 🚀 Quick Start Guide
+
+There are two ways to run this application:
+
+### Method 1: Using Run Script (Recommended)
+
+## ⚠️ IMPORTANT REMINDER
+
+**This application must be run using Git Bash on Windows. Command Prompt or PowerShell will NOT work correctly.**
 
 ### Prerequisites
 
 - Node.js (v18.18.0)
 - MongoDB
-- Git
+- Git Bash (Required for Windows users)
 
 ### Installation Steps
 
@@ -84,7 +28,6 @@ Password: `Admin@123`
    ```
 
 2. **Environment Configuration**
-
    Create a `.env` file in the /server directory with the following variables:
 
    ```env
@@ -101,6 +44,48 @@ Password: `Admin@123`
    ```bash
    ./run-services.sh
    ```
+4. Visit http://localhost:5173 in your browser to access the application
+
+### Method 2: Manual Installation (Running Services Separately)
+
+If you prefer to run the frontend and backend separately, follow these steps:
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/jamsheerply/Patient-Health-Dashboard-for-Prior-Authorization.git
+   cd Patient-Health-Dashboard-for-Prior-Authorization
+   ```
+
+2. **Setup Backend (First Terminal)**
+
+   ```bash
+   cd server
+   npm install
+   # Create .env file as shown above
+   npm start
+   ```
+
+   Backend will run on http://localhost:5000
+
+3. **Setup Frontend (Second Terminal)**
+   ```bash
+   cd client
+   npm install
+   npm run dev
+   ```
+   Frontend will run on http://localhost:5173
+
+### Ports and Access
+
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
+
+### Verification Steps
+
+1. Backend is running when you see: "Server is running on port 5000"
+2. Frontend is running when you see: "Local: http://localhost:5173/"
+3. Visit http://localhost:5173 in your browser to access the application
 
 ## 💡 Contributing
 
